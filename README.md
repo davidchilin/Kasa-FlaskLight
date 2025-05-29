@@ -1,21 +1,17 @@
 # Kasa FlaskLight
 
-FlaskLight updated with color picker from FlexiColorPicker https://github.com/DavidDurman/FlexiColorPicker. get some practice with llm.
+FlaskLight updated with color picker from FlexiColorPicker https://github.com/DavidDurman/FlexiColorPicker. This project was updated so I could get some practice with llm.
 Used older Kasa Smartbulb library pyHS100, but you can also update to python-kasa which uses asyncio.
 
 <img src="https://github.com/davidchilin/Kasa-FlaskLight/blob/master/lamp_control.jpg?raw=true" alt="image" width="300" height="auto" align="center" >
 
-## Q&A
-- Doesn't  KASA already have a mobile app and cloud site to do this with?
-	 - Avoid using some of the vendor lock in software.
-     This allows me to access it from any device without installing anything
-
-- How do I use this dang thing?
-	- Connect the KASA bulb to your wifi using their pesky mobile app
+- Avoid using vendor app
+- How to use?
+	- Connect the KASA bulb to your wifi using their mobile app
 	-  Change the `bulb = SmartBulb("192.168.1.253")` in app.py to the IP of your bulb
 	-  Run `pip3 install -r requirements.txt`
 	-  Run ./run.sh
-	-  Connect to localhost:8123, or whatever you want to set, at the very end of app.py
+	-  Connect to localhost:8080, or whatever you want to set, at the very end of app.py
 - How do I find the IP of my bulb?
   - Run `pyhs100` with no arguments in a shell after installing the requirements with pip
 - Help, I can't access the interface!
