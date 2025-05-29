@@ -2,8 +2,7 @@
 
 FlaskLight updated with color picker from FlexiColorPicker https://github.com/DavidDurman/FlexiColorPicker. get some practice with llm.
 Used older Kasa Smartbulb library pyHS100, but you can also update to python-kasa which uses asyncio.
-
- ![Screenshot](https://github.com/davidchilin/Kasa-FlaskLight/blob/master/lamp_control.jpg?raw=true)
+<img src="https://github.com/davidchilin/Kasa-FlaskLight/blob/master/lamp_control.jpg?raw=true" alt="image" width="300" height="auto">
 
 ## Q&A
 - Doesn't  KASA already have a mobile app and cloud site to do this with?
