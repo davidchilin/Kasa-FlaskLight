@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from pyHS100 import SmartBulb
 
-BULB_IP = "kasa.o"
+BULB_IP = "KASA_BULB_IP"
 bulb = None
 
 try:
@@ -454,5 +454,14 @@ def lightSetColor():
         return jsonify(error=str(e)), 500
 
 
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory(
+        app.root_path,
+        "free-icon-light-bulb.png",
+        mimetype="image/vnd.microsoft.icon",
+    )
+
+
 if __name__ == "__main__":
-    app.run(debug=False, host="0.0.0.0", port=8080)
+    app.run(debug=False, host="0.0.0.0", port=5000)
